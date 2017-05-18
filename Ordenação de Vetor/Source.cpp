@@ -120,8 +120,6 @@ int main() {
 
 	//for (int i = 0; i < VetorSize; i++) std::cout << Vetor[i] << "\n";
 
-
-
 	system("pause");
 	return 0;
 }
