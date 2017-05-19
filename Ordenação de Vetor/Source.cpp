@@ -20,7 +20,6 @@ void PreencherVetor(int vetor[], int tamanho) {
 			}
 		}
 		vetor[i] = aux;
-		//std::cout << vetor[i] << "\n"; //->mostrar Vetor
 	}
 }
 
@@ -64,7 +63,6 @@ int BubbleSort(int vetor[], int tamanho) {
 }
 
 int QuickSort(int vetor[VetorSize], int inicio, int fim) {
-
 	int pivo, aux, i, j, meio;
 	int trocas = 0;
 
@@ -112,13 +110,13 @@ int main() {
 	int TrocasQuick = QuickSort(Copia, 0, VetorSize - 1);
 	ResetarCopia(Vetor, Copia, VetorSize);
 
+	int TrocasInsertion = InsertionSort(Copia, VetorSize);
+	int TrocasBubble = BubbleSort(Copia, VetorSize);
+	int TrocasQuick = QuickSort(Copia, 0, VetorSize - 1);
 
 	std::cout << "Algoritmo de Insercao: " << TrocasInsertion << "\n";
 	std::cout << "Algoritmo de Bubble: " << TrocasBubble << "\n";
 	std::cout << "Algoritmo de Quick: " << TrocasQuick << "\n";
-
-
-	//for (int i = 0; i < VetorSize; i++) std::cout << Vetor[i] << "\n";
 
 	system("pause");
 	return 0;
